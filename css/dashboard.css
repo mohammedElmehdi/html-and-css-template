@@ -1,0 +1,842 @@
+/* Start dealing with the main-content section */
+.main-container>.main-section>.main-content .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards {
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media(max-width: 1099px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards {
+        width: 100%;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .card {
+    width: calc((100% - 10px) / 2);
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .card {
+        width: 100%;
+    }
+}
+
+/*==> welcome-card start*/
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card {
+    padding: 0;
+    border-top-left-radius: 20px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: var(--main-border-radius);
+    border-top-right-radius: var(--main-border-radius);
+    border-top-left-radius: 20px;
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card,
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top {
+        border-top-right-radius: 20px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+@media(max-width: 420px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 38px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left h3,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left p {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .left a img {
+    width: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .right {
+    padding: 15px 15px 15px 0;
+}
+
+@media(max-width: 420px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .right {
+        display: none;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .right img {
+    max-width: 170px;
+}
+
+@media(max-width: 1050px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .top .right img {
+        width: 130px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom {
+    padding: 25px 15px 5px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom ul {
+    padding: 0;
+    margin-bottom: 4px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom ul li {
+    text-align: center;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom ul li h5,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom ul li p {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom ul li p {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #888;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .welcome-card .bottom>a {
+    margin-left: auto;
+}
+/*==> welcome-card end*/
+
+/*==> quick-draft start*/
+@media(min-width: 768px) and (max-width: 1099px) {
+    .main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft {
+        border-top-right-radius: 20px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form input,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form textarea {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 4px 5px;
+    margin-bottom: 15px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: var(--main-border-radius);
+    outline: none;
+    transition: var(--main-transition);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form input::placeholder,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form textarea::placeholder {
+    font-size: 14px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form input:focus,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form textarea:focus {
+    background-color: #f7f7f7;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form textarea {
+    height: 100px;
+    max-width: 100%;
+    min-width: 40%;
+    max-height: 100px;
+    min-height: 50px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form .buttons {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form .buttons button {
+    cursor: pointer;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .quick-draft form .buttons button:last-of-type {
+    background-color: orange;
+}
+/* ==> quick-draft end*/
+
+/* ==> yearly-targets start*/
+@media(min-width: 1100px) {
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets{
+    border-bottom-left-radius: 20px;
+}
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 5px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.blue .icon {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.orange .icon {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.green .icon {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.blue .icon i {
+    color: #0075ff;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.orange .icon i {
+    color: #f59e0b;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.green .icon i {
+    color: #22c55e;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .graph {
+    flex: 1;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .text p {
+    font-size: 14px;
+    color: #888;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .text strong {
+    font-size: 13px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .range {
+    width: 100%;
+    height: 4px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .range span.tape {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.blue .range span.tape {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.orange .range span.tape {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.green .range span.tape {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .range span.tape::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.blue .range span.tape::before {
+    width: 80%;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.orange .range span.tape::before {
+    width: 55%;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.green .range span.tape::before {
+    width: 75%;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li .range span.number {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    padding: 2px 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translate(-50%, calc(-100% - 1px));
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.blue .range span.tape::before,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.blue .range span.number {
+    background-color: #0075ff;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.orange .range span.tape::before,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.orange .range span.number {
+    background-color: #f59e0b;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.green .range span.tape::before,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .yearly-targets ul li.green .range span.number {
+    background-color: #22c55e;
+}
+/* ==> yearly-targets end */
+
+/* ==> social-media-stats start */
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li {
+    display: flex;
+    align-items: center;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li:not(:last-of-type) {
+    margin-bottom: 13px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.twitter {
+    background-color: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.facebook {
+    background-color: rgb(24 119 242 / 20%);
+    color: #1da1f2;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.youtube {
+    background-color: rgb(255 0 0 / 20%);
+    color: #ff0000
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li>a {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.twitter>a {
+    background-color: #1da1f2;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.facebook>a {
+    background-color: #1877f2;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.youtube>a {
+    background-color: #ff0000;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li .stats {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li .stats p,
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li .stats a {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.facebook .stats a {
+    background-color: #1877f2;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .ordinary-cards .social-media-stats ul li.youtube .stats a {
+    background-color: #ff0000;
+}
+/* ==> social-media-stats end */
+
+/* ==> long-card start */
+.main-container>.main-section>.main-content .dashboard-cards .long-card {
+    width: calc(34% - 10px);
+    position: relative;
+}
+
+@media(max-width: 1099px) {
+    .main-container>.main-section>.main-content .dashboard-cards .long-card {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1100px) {
+    .main-container>.main-section>.main-content .dashboard-cards .long-card {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card::after {
+    content: "These steps were generated by chatGPT";
+    font-size: 14px;
+    color: #888;
+    opacity: 0.5;
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul {
+    margin: 30px 0 20px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #0075ff;
+    position: absolute;
+    top: 0;
+    left: 14px;
+    transform: translateX(-50%);
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content .dashboard-cards .long-card ul::before {
+        left: 13px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li>span {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border: 2px solid #0075ff;
+    border-radius: 50%;
+    position: relative;
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content .dashboard-cards .long-card ul li>span {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li>span::after {
+    content: "";
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li>span.finished::after {
+    background-color: #489dff;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li>span.in::after {
+    animation-name: projects-progress-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li .text {
+    max-width: calc(100% - 43px);
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content .dashboard-cards .long-card ul li .text {
+        max-width: calc(100% - 41px);
+    }   
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li .text h4,
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li .text p {
+    font-weight: normal;
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card ul li .text p {
+    font-size: 13px;
+    color: #888;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card .buttons button {
+    margin: 0;
+    cursor: pointer;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card .buttons button:first-of-type {
+    background-color: #22c55e;
+}
+
+.main-container>.main-section>.main-content .dashboard-cards .long-card .buttons button span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* ==> long-card end */
+
+/* ==> latest-news start */
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li,
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .image img {
+    max-width: 90px;
+    border-radius: var(--main-border-radius);
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text {
+    flex: 1;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text h4,
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text p {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text h4 {
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text p {
+    font-size: 13px;
+    color: #888;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-news ul li .text span {
+    display: block;
+    font-size: 10px;
+    padding: 2px 4px;
+    background-color: #eee;
+    border-radius: var(--main-border-radius);
+}
+/* ==> latest-news end */
+
+/* ==> latest-tasks start */
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li:not(:first-of-type) {
+    padding-top: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li:not(:last-of-type) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li .text h4,
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li .text p {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li.line-through h4,
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li.line-through p {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li .text h4 {
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li .text p {
+    font-size: 12px;
+    color: #888;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li button {
+    color: black;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-tasks ul li button:hover {
+    color: red;
+}
+/* ==> latest-tasks end */
+
+/* ==> latest-uploads start */
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li:not(:first-child) {
+    padding-top: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li:not(:last-child){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li>div {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li div img {
+    max-width: 40px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li div h4,
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li div p {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li div h4 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li div p {
+    font-size: 13px;
+    color: #888;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-latest-uploads ul li>span {
+    display: block;
+    font-size: 12px;
+    padding: 2px 4px;
+    background-color: #eee;
+}
+/* ==> latest-uploads end */
+
+/* ==> dashboard-post-card start */
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .header .user img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 2px;
+    border-radius: 50%;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .header .user h6 {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .header>p.text {
+    font-size: 15px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .image {
+    text-align: center;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .image img {
+    width: 100%;
+    max-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--main-border-radius);
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .statistques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-post-card .post .statistques button {
+    font-size: 15px;
+    color: #888;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* ==> dashboard-post-card end */
+
+/* ==> map-card start */
+.main-container>.main-section>.main-content .cards .dashboard-map-card {
+    flex: 1;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-map-card .content .recomandation h4,
+.main-container>.main-section>.main-content .cards .dashboard-map-card .content .recomandation p {
+    margin: 0;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-map-card .content .recomandation h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-map-card .content .recomandation p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #5a5a5a;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-map-card .content .recomandation p strong {
+    font-style: italic;
+}
+
+.main-container>.main-section>.main-content .cards .dashboard-map-card .content .map img {
+    display: block;
+    width: 100%;
+    max-height: 250px;
+    border-radius: var(--main-border-radius);
+}
+/* ==> map-card end */
+
+/* keyframes start */
+@keyframes projects-progress-animation {
+    to {
+        background-color: #489dff;
+    }
+}
+/* keyframes start */
+
+/* main-content handle ends */

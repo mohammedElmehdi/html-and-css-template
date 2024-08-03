@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --main-border-radius: 5px;
+    --main-transition: 0.4s;
+    --link-bg: #0075ff;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container .main-link {
+    display: block;
+    width: fit-content;
+    font-size: 13px;
+    color: white;
+    background-color: var(--link-bg);
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 10px;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    border-radius: var(--main-border-radius);
+}
+
+.main-container .margin-b-10 {
+    margin-bottom: 10px;
+}
+
+/* Start dealing with aside and navigation styles */
+.main-container>aside{
+    height: 100%;
+    width: 147.39px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+    z-index: 2;
+    overflow: auto;
+}
+
+@media(max-width: 767px) {
+    .main-container>aside{
+        width: 82px;
+        padding: 10px;
+    }
+}
+
+.main-container>aside h3 {
+    width: fit-content;
+    margin: 0 auto 30px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+@media(max-width: 767px) {
+    .main-container>aside h3 {
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.main-container>aside h3::before {
+    content: "";
+    width: calc(100% + 20px);
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+}
+
+.main-container>aside h3::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+@media(max-width: 767px) {
+    .main-container>aside h3::before,
+    .main-container>aside h3::after {
+        display: none;
+    }
+}
+
+.main-container>aside nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+.main-container>aside nav ul li:not(:last-of-type) {
+    margin-bottom: 13px;
+}
+
+@media (max-width: 767px) {
+    .main-container>aside nav ul li:not(:last-of-type) {
+        margin-bottom: 8px;
+    }
+}
+
+.main-container>aside nav ul li a {
+    display: block;
+    font-size: 15px;
+    padding: 8px 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: var(--main-border-radius);
+    position: relative;
+    z-index: 1;
+}
+
+@media(max-width: 767px) {
+.main-container>aside nav ul li a {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+}
+}
+
+.main-container>aside nav ul li a::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: var(--main-transition);
+}
+
+.main-container>aside nav ul li a:hover::before,
+.main-container>aside nav ul li a.active::before {
+    width: 100%;
+}
+
+.main-container>aside nav ul li a i {
+    font-size: 12px;
+}
+
+@media(max-width:767px) {
+    .main-container>aside nav ul li a i {
+        font-size: 15px;
+    }
+
+    .main-container>aside nav ul li a span {
+        display: none;
+    }
+}
+/* Finish dealing with aside and navigation styles */
+
+
+/* Start dealing with the main-section styles */
+.main-container>.main-section {
+    width: calc(100% - 147.39px);
+    height: 100%;
+    overflow-x: auto;
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section {
+        width: calc(100% - 82px);
+    }
+}
+
+.main-container>.main-section>.main-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 15px;
+    background-color: white;
+    overflow-x: auto;
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-header {
+        padding: 10px 5px;
+    }
+}
+
+.main-container>.main-section>.main-header form {
+    position: relative;
+}
+
+.main-container>.main-section>.main-header form input {
+    display: block;
+    font-size: 14px;
+    width: 180px;
+    padding: 6px 6px 6px 30px;
+    color: #888;
+    border: 1px solid #ddd;
+    outline: 0;
+    border-radius: var(--main-border-radius);
+    transition: width var(--main-transition);
+}
+
+.main-container>.main-section>.main-header form input:focus {
+    width: 210px;
+}
+
+.main-container>.main-section>.main-header form input::placeholder {
+    font-size: 12px;
+}
+
+.main-container>.main-section>.main-header form input:focus::placeholder {
+    appearance: none;
+}
+
+.main-container>.main-section>.main-header form button {
+    font-size: 14px;
+    padding: 0;
+    background-color: transparent;
+    color: #888;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 7.5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.main-container>.main-section>.main-header .user-icons {
+    width: fit-content;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-header .user-icons {
+        column-gap: 5px;
+    }
+}
+
+.main-container>.main-section>.main-header .user-icons button {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.main-container>.main-section>.main-header .user-icons img {
+    width: 26px;
+}
+/* Finish dealing with the main-section styles */
+
+
+/* Start dealing with the main-content styles */
+.main-container>.main-section>.main-content {
+    height: calc(100% - 60.09px);
+    padding: 10px 20px;
+    background-color: #f1f5f9;
+    overflow: auto;
+}
+
+@media(max-width: 1099px) {
+    .main-container>.main-section>.main-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content {
+        height: calc(100% - 50.09px);
+    }
+}
+
+.main-container>.main-section>.main-content h2.dynamique-heading {
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.main-container>.main-section>.main-content h2.dynamique-heading::before,
+.main-container>.main-section>.main-content h2.dynamique-heading::after {
+    content: "";
+    height: 3px;
+    border-radius: var(--main-border-radius);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main-container>.main-section>.main-content h2.dynamique-heading::before {
+    width: calc(100% + 40px);
+    background-color: white;
+}
+
+.main-container>.main-section>.main-content h2.dynamique-heading::after {
+    width: 40%;
+    background-color: black;
+}
+
+.main-container>.main-section>.main-content .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-container>.main-section>.main-content .cards .card  {
+    width: calc((100% - 20px) / 3);
+    background-color: white;
+    padding: 10px;
+    border-radius: var(--main-border-radius);
+}
+
+@media(max-width: 1099px) {
+    .main-container>.main-section>.main-content .cards .card {
+        width: calc((100% - 10px) / 2);
+    }
+}
+
+@media(max-width: 767px) {
+    .main-container>.main-section>.main-content .cards .card {
+        width: 100%;
+    }
+}
+
+.main-container>.main-section>.main-content .cards .card.full-width {
+    width: 100%;
+}
+
+.main-container>.main-section>.main-content .cards .card .card-title h3,
+.main-container>.main-section>.main-content .cards .card .card-title p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.main-container>.main-section>.main-content .cards .card .card-title p {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.main-container>.main-section>.main-content .table-container {
+    overflow-x: auto;
+}
+
+.main-container>.main-section>.main-content .table-container table {
+    width: 100%;
+    min-width: 1000px;
+    border-spacing: 0;
+}
+
+.main-container>.main-section>.main-content .table-container table th {
+    font-size: 14px;
+    padding: 15px 8px;
+    text-align: left;
+    background-color: #eee;
+}
+
+.main-container>.main-section>.main-content .table-container table td {
+    font-size: 14px;
+    padding: 17px 8px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.main-container>.main-section>.main-content .table-container table td:last-of-type {
+    border-right: 1px solid #eee;
+} 
+
+.main-container>.main-section>.main-content .table-container table td .images img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.main-container>.main-section>.main-content .table-container table td .images img:not(:first-of-type) {
+    margin-left: -15px;
+}
+
+.main-container>.main-section>.main-content .table-container table td>a.main-link {
+    font-size: 12px;
+}
+
+.main-container>.main-section>.main-content .table-container table td>a.main-link.pending {
+    background-color: #f59e0b;
+}
+
+.main-container>.main-section>.main-content .table-container table td>a.main-link.completed{
+    background-color: #22c55e;
+}
+
+.main-container>.main-section>.main-content .table-container table td>a.main-link.rjected {
+    background-color: #f44336;
+}
+/* Finish dealing with the main-content styles */
