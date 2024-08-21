@@ -55,8 +55,8 @@ body {
 
 @media(max-width: 767px) {
     .main-container>aside{
-        width: 82px;
-        padding: 10px;
+        width: fit-content;
+        padding: 10px 5px;
     }
 }
 
@@ -69,9 +69,7 @@ body {
 
 @media(max-width: 767px) {
     .main-container>aside h3 {
-        font-size: 14px;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        display: none;
     }
 }
 
@@ -116,6 +114,9 @@ body {
 }
 
 @media (max-width: 767px) {
+    .main-container>aside nav ul {
+        margin: 0;
+    }
     .main-container>aside nav ul li:not(:last-of-type) {
         margin-bottom: 8px;
     }
@@ -183,7 +184,7 @@ body {
 
 @media(max-width: 767px) {
     .main-container>.main-section {
-        width: calc(100% - 82px);
+        flex: 1;
     }
 }
 
