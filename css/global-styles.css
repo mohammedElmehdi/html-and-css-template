@@ -196,7 +196,7 @@ body {
     overflow-x: auto;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1099px) {
     .main-container>.main-section>.main-header {
         padding: 10px;
     }
