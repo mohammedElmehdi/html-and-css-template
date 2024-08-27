@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical application of HTML and CSS" />
+    <meta name="keywords" content="Html, Css, web, web application, css expemple, programming, dashboard" />
+    <meta name="author" content="Mohammed EL-MEHDI" />
+    <base target="_self" />
+    <title>EL-MEHDI | Dashboard</title>
+    <link rel="shortcut icon" href="./images/fav-icon.webp" />
+    <!-- Insert the normailze css file -->
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" type="text/css" />
+    <!-- Insert the global Css file -->
+    <link rel="stylesheet" href="./css/global-styles.css" type="text/css" />
+    <!-- Insert the private Css file -->
+    <link rel="stylesheet" href="./css/settings.css" type="text/css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Start dealing with the aside -->
+        <aside>
+            <h3>EL-Mehdi</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Dashboard">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" title="Settings" class="active">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Profile">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Projects">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Courses">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Friends">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Fiels">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span>Fiels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Plans">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Aside handle ends -->
+
+        <!-- Start dealing with the main-section -->
+        <section class="main-section">
+            <header class="main-header">
+                <form method="POST" action="./settings.html">
+                    <input type="search" name="query" placeholder="Type A Keyword" />
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div class="user-icons">
+                    <button class="notifications">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </button>
+                    <a href="#">
+                        <img src="./images/dashboard/avatar.webp" alt="" />
+                    </a>
+                </div>
+            </header>
+            <div class="main-content settings-contents">
+                <h2 class="dynamique-heading">
+                    Settings
+                </h2>
+                <div class="cards first-party">
+                    <div class="card update-logo">
+                        <div class="card-title">
+                            <h3>WebSite logo</h3>
+                            <p>Update you webSite logo</p>
+                        </div>
+                        <div class="update-process">
+                            <div class="selected-logo">
+                                <img src="./images/fav-icon.webp" alt="" />
+                            </div>
+                            <div class="buttons">
+                                <input type="file" accept="image/*" id="logoFile" />
+                                <label for="logoFile" class="main-link">replace logo</label>
+                                <button><i class=" fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
+                    </div>
+                    <div class="card update-interfaces-themes update-theme">
+                        <div class="card-title">
+                            <h3>Interface theme</h3>
+                            <p>Select or customize you UI theme</p>
+                        </div>
+                        <div class="tehmes">
+                            <div class="theme">
+                                <input type="radio" name="interfaceTheme" id="interfacesSystemPrefereceMode" />
+                                <label for="interfacesSystemPrefereceMode">
+                                    <div class="image">
+                                        <img src="./images/settings/interfaces-mode-options/dark-mode.png" />
+                                    </div>
+                                    <span>System preference</span>
+                                </label>
+                            </div>
+                            <div class="theme">
+                                <input type="radio" name="interfaceTheme" id="interfaceLightMode" checked />
+                                <label for="interfaceLightMode">
+                                    <div class="image">
+                                        <img src="./images/settings/interfaces-mode-options/light-mode.png" />
+                                    </div>
+                                    <span>Light</span>
+                                </label>
+                            </div>
+                            <div class="theme">
+                                <input type="radio" name="interfaceTheme" id="interfaceDarkMode" />
+                                <label for="interfaceDarkMode">
+                                    <div class="image">
+                                        <img src="./images/settings/interfaces-mode-options/dark-mode.png" />
+                                    </div>
+                                    <span>Dark</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card security-info">
+                        <div class="card-title">
+                            <h3>Security Info</h3>
+                            <p>Security Information About Your Account</p>
+                        </div>
+                        <ul class="infos">
+                            <li>
+                                <div class="text">
+                                    <h4>Password</h4>
+                                    <p>Last Change On 30/07/2024</p>
+                                </div>
+                                <button class="main-link">change</button>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <h4>Two-Factor Authentication</h4>
+                                    <p>Enable/Disable The Feature</p>
+                                </div>
+                                <button class="main-link">update</button>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <h4>Devices</h4>
+                                    <p>Check The Login Devices List</p>
+                                </div>
+                                <button class="main-link">Devices</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card integrations">
+                        <div class="card-title">
+                            <h3>Integrations</h3>
+                            <p>Supercharge your workflow and connect the tools you and your teal uses every day</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="image">
+                                    <img src="./images/settings/itegrations/chatgpt.jpg" alt="" />
+                                </div>
+                                <div class="text">
+                                    <h4>ChatGbt <a href="https://chatgpt.com" target="_blank">chatgpt.com <i
+                                                class="fa-solid fa-up-right-from-square"></i></a></h4>
+                                    <p>An AI-powered NLP tool that interacts in a human-like manner</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="./images/settings/itegrations/mailchimp.jpg" alt="" />
+                                </div>
+                                <div class="text">
+                                    <h4>Mailchimp <a href="https://mailchimp.com" target="_blank">mailchimp.com <i
+                                                class="fa-solid fa-up-right-from-square"></i></a></h4>
+                                    <p>Grow your business with an all-in-one marketing, automation, and email platform
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="./images/settings/itegrations/square.png" alt="" />
+                                </div>
+                                <div class="text">
+                                    <h4>Square <a href="https://square.com" target="_blank">square.com <i
+                                                class="fa-solid fa-up-right-from-square"></i></a></h4>
+                                    <p>Start selling instantly with built-in payments, POS software, and hardware.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card brand-color">
+                        <div class="card-title">
+                            <h3>Brand color</h3>
+                            <p>Select or customize your brand color</p>
+                        </div>
+                        <div class="colors">
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor1" />
+                                <label for="brandColor1"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor2" />
+                                <label for="brandColor2"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor3" />
+                                <label for="brandColor3"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor4" />
+                                <label for="brandColor4"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor5" checked />
+                                <label for="brandColor5"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor6" />
+                                <label for="brandColor6"></label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>

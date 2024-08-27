@@ -1,0 +1,301 @@
+.main-container .main-section .settings-contents .cards .update-logo {
+    width: calc(34% - 10px)
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process::after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background-color: #e3effa;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .selected-logo {
+    padding: 4px 8px;
+    border: 1px solid #e3effa;
+    border-radius: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .selected-logo img {
+    display: block;
+    max-width: 120px;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .buttons input{
+    display: none;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .buttons label,
+.main-container .main-section .settings-contents .cards .update-logo .update-process .buttons button {
+    font-size: 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .buttons button:last-of-type {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo .update-process .buttons button:last-of-type:hover {
+    color: red;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo>.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo>.buttons button {
+    margin: 0;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .update-logo>.buttons button:last-child {
+    color: black;
+    background-color: transparent;
+}
+
+.main-container .main-section .settings-contents .cards .update-theme {
+    width: 66%
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme input {
+    display: none;
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme label {
+    display: block;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme .image {
+    margin-bottom: 10px;
+    border: 2px solid #e3effa;
+    padding: 2px;
+    border-radius: 10px;
+    transition: var(--main-transition);
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme input:checked + label>.image{
+    border: 2px solid #0075ff;
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme .image img {
+    display: block;
+    width: 170px;
+    max-height: 170px;
+    border-radius: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme label span {
+    font-size: 17px;
+    transition: var(--main-transition);
+}
+
+.main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme input:checked + label>span {
+    color: #0075ff;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li:not(:first-child) {
+    padding-top: 15px;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li:not(:last-child)::after {
+    content: "";
+    width: 80%;
+    border-top: 1px solid #b8b8b8;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li .text h4 {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li .text p {
+    font-size: 14px;
+    margin: 0;
+    color: #888
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li button {
+    margin: 0;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .security-info ul li:nth-of-type(2) button {
+    background-color: orange;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li .image img {
+    max-width: 40px;
+    border-radius: 5px;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li .text h4 {
+    margin: 0;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li .text h4 a {
+    font-size: 15px;
+    font-weight: normal;
+    color: #888;
+    text-decoration: none;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li .text h4 a i {
+    font-size: 12px;
+}
+
+.main-container .main-section .settings-contents .cards .integrations ul li .text p {
+    font-size: 13px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors input {
+    display: none;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div {
+    width: calc((100% - 20px) / 3);
+    height: 80px;
+    padding: 2px;
+    border: 1px solid #e3effa;
+    border-radius: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:has(input:checked) {
+    border-color: #0075ff;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(1) label {
+    background-color: #A9D6E5;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(2) label {
+    background-color: #A3D9B1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(3) label {
+    background-color: #FFF4B1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(4) label {
+    background-color: #FFD8B1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(5) label {
+    background-color: #FFC1CC;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(6) label {
+    background-color: #D3D3D3;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 15px;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .buttons button {
+    background-color: orange;
+    margin: 0;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .buttons button:last-of-type {
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}                 
