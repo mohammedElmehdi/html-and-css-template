@@ -3,6 +3,7 @@ A basic HTML and CSS starter template for web projects. Provides a clean HTML st
 [live preview](https://mohammedelmehdi.github.io/html-and-css-template/)
 
 ## Pages included in this template
-- ashboard [live preview](https://mohammedelmehdi.github.io/html-and-css-template/)
+- ashboard [live preview](https://mohammedelmehdi.github.io/html-and-css-template)
+- settings [live preview](https://mohammedelmehdi.github.io/html-and-css-template/settings.html)
 
 *Free for personal and commercial use*
