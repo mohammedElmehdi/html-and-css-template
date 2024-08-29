@@ -105,26 +105,6 @@
                     Settings
                 </h2>
                 <div class="cards first-party">
-                    <div class="card update-logo">
-                        <div class="card-title">
-                            <h3>WebSite logo</h3>
-                            <p>Update you webSite logo</p>
-                        </div>
-                        <div class="update-process">
-                            <div class="selected-logo">
-                                <img src="./images/fav-icon.webp" alt="" />
-                            </div>
-                            <div class="buttons">
-                                <input type="file" accept="image/*" id="logoFile" />
-                                <label for="logoFile" class="main-link">replace logo</label>
-                                <button><i class=" fa-regular fa-trash-can"></i></button>
-                            </div>
-                        </div>
-                        <div class="buttons">
-                            <button class="main-link">save</button>
-                            <button class="main-link">cancel</button>
-                        </div>
-                    </div>
                     <div class="card update-interfaces-themes update-theme">
                         <div class="card-title">
                             <h3>Interface theme</h3>
@@ -160,6 +140,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card update-logo">
+                        <div class="card-title">
+                            <h3>WebSite logo</h3>
+                            <p>Update you webSite logo</p>
+                        </div>
+                        <div class="update-process">
+                            <div class="selected-logo">
+                                <img src="./images/fav-icon.webp" alt="" />
+                            </div>
+                            <div class="buttons">
+                                <input type="file" accept="image/*" id="logoFile" />
+                                <label for="logoFile" class="main-link">replace logo</label>
+                                <button><i class=" fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                        <div class="manage-buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
+                    </div>
                     <div class="card security-info">
                         <div class="card-title">
                             <h3>Security Info</h3>
@@ -186,6 +186,124 @@
                                     <p>Check The Login Devices List</p>
                                 </div>
                                 <button class="main-link">Devices</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card personel-info">
+                        <div class="card-title">
+                            <h3>Personal information</h3>
+                            <p>Manage your personal information</p>
+                        </div>
+                        <form class="infos">
+                            <div>
+                                <label for="personalUserName">Username: </label>
+                                <input type="text" name="username" id="personalUserName" value="Mohammed EL-Mehdi" />
+                            </div>
+                            <div>
+                                <label for="personalEmail">Email: </label>
+                                <input type="email" name="email" id="personalEmail"
+                                    value="mehdiforprogramming@gamil.com" />
+                            </div>
+                            <div>
+                                <label for="personalTimeZone">Time zone: </label>
+                                <input list="timeZones" id="personalTimeZone" value="UTC-12:00 – Baker Island Time" />
+                                <datalist id="timeZones">
+                                    <option>UTC-12:00 – Baker Island Time</option>
+                                    <option>UTC-06:00 – Central Standard Time (CST)</option>
+                                    <option>UTC+00:00 – Greenwich Mean Time (GMT) / Coordinated Universal Time</option>
+                                    <option>UTC+05:30 – Indian Standard Time (IST)</option>
+                                    <option>UTC+08:00 – China Standard Time (CST) / Australian Western Standard Time
+                                        (AWST)</option>
+                                    <option>UTC+14:00 – Line Islands Time (LINT)</option>
+                                </datalist>
+                            </div>
+                        </form>
+                        <div class="manage-buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
+                    </div>
+                    <div class="card brand-color">
+                        <div class="card-title">
+                            <h3>Brand color</h3>
+                            <p>Select or customize your brand color</p>
+                        </div>
+                        <div class="colors">
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor1" />
+                                <label for="brandColor1"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor2" />
+                                <label for="brandColor2"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor3" />
+                                <label for="brandColor3"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor4" />
+                                <label for="brandColor4"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor5" checked />
+                                <label for="brandColor5"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor6" />
+                                <label for="brandColor6"></label>
+                            </div>
+                        </div>
+                        <div class="manage-buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
+                    </div>
+                    <div class="card third-party-acoounts">
+                        <div class="card-title">
+                            <h3>third party accounts</h3>
+                            <p>Link your accounts to sign in and automate your workflow</p>
+                        </div>
+                        <ul class="accounts">
+                            <li>
+                                <div class="account">
+                                    <img src="./images/settings/link-acoounts/google.webp" alt="" />
+                                    <div class="text">
+                                        <h3>Google</h3>
+                                        <span title="mehdiforprogramming@gmail.com">mehdiforprogra...</span>
+                                    </div>
+                                </div>
+                                <button class="main-link">Unlink</button>
+                            </li>
+                            <li>
+                                <div class="account">
+                                    <img src="./images/settings/link-acoounts/zoom.webp" alt="" />
+                                    <div class="text">
+                                        <h3>Zoom</h3>
+                                        <span>Not linked</span>
+                                    </div>
+                                </div>
+                                <button class="main-link">Link</button>
+                            </li>
+                            <li>
+                                <div class="account">
+                                    <img src="./images/settings/link-acoounts/solana.png" alt="" />
+                                    <div class="text">
+                                        <h3>Solana</h3>
+                                        <span>Not linked</span>
+                                    </div>
+                                </div>
+                                <button class="main-link">Link</button>
+                            </li>
+                            <li>
+                                <div class="account">
+                                    <img src="./images/settings/link-acoounts/Ethereum.png" alt="" />
+                                    <div class="text">
+                                        <h3>Ethereum</h3>
+                                        <span>Not linked</span>
+                                    </div>
+                                </div>
+                                <button class="main-link">Link</button>
                             </li>
                         </ul>
                     </div>
@@ -228,42 +346,6 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                    <div class="card brand-color">
-                        <div class="card-title">
-                            <h3>Brand color</h3>
-                            <p>Select or customize your brand color</p>
-                        </div>
-                        <div class="colors">
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor1" />
-                                <label for="brandColor1"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor2" />
-                                <label for="brandColor2"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor3" />
-                                <label for="brandColor3"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor4" />
-                                <label for="brandColor4"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor5" checked />
-                                <label for="brandColor5"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor6" />
-                                <label for="brandColor6"></label>
-                            </div>
-                        </div>
-                        <div class="buttons">
-                            <button class="main-link">save</button>
-                            <button class="main-link">cancel</button>
-                        </div>
                     </div>
                 </div>
             </div>
