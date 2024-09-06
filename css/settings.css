@@ -21,10 +21,17 @@
     width: 66%
 }
 
+@media (max-width: 1060px) {
+    .main-container .main-section .settings-contents .cards .update-theme {
+        width: 100%;
+    }
+}
+
 .main-container .main-section .settings-contents .cards .update-theme .tehmes {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
 }
 
@@ -56,6 +63,12 @@
     border-radius: 10px;
 }
 
+@media(max-width: 767px) {
+    .main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme .image img {
+        width: 100%;
+    }
+}
+
 .main-container .main-section .settings-contents .cards .update-theme .tehmes> .theme label span {
     font-size: 17px;
     transition: var(--main-transition);
@@ -65,8 +78,10 @@
     color: #0075ff;
 }
 
-.main-container .main-section .settings-contents .cards .update-logo {
-    width: calc(34% - 10px)
+@media(min-width: 1061px) {
+    .main-container .main-section .settings-contents .cards .update-logo {
+        width: calc(34% - 10px)
+    }
 }
 
 .main-container .main-section .settings-contents .cards .update-logo .update-process {
@@ -103,7 +118,8 @@
 .main-container .main-section .settings-contents .cards .update-logo .update-process .buttons {
     display: flex;
     align-items: center;
-    column-gap: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .main-container .main-section .settings-contents .cards .update-logo .update-process .buttons input{
@@ -208,60 +224,6 @@
     outline: none;
 }
 
-.main-container .main-section .settings-contents .cards .brand-color .colors {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors input {
-    display: none;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div {
-    width: calc((100% - 20px) / 3);
-    height: 80px;
-    padding: 2px;
-    border: 1px solid #e3effa;
-    border-radius: 10px;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:has(input:checked) {
-    border-color: #0075ff;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div label {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(1) label {
-    background-color: #A9D6E5;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(2) label {
-    background-color: #A3D9B1;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(3) label {
-    background-color: #FFF4B1;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(4) label {
-    background-color: #FFD8B1;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(5) label {
-    background-color: #FFC1CC;
-}
-
-.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(6) label {
-    background-color: #D3D3D3;
-}
-
 .main-container .main-section .settings-contents .cards .third-party-acoounts ul { 
     padding: 0;
     margin: 0;
@@ -321,6 +283,45 @@
     background-color: #954fff;
 }
 
+
+.main-container .main-section .settings-contents .cards .site-control .site-state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main-container .main-section .settings-contents .cards .site-control .site-state h4,
+.main-container .main-section .settings-contents .cards .site-control .site-state p {
+    margin: 0;
+}
+
+.main-container .main-section .settings-contents .cards .site-control .site-state h4 {
+    font-weight: normal;
+}
+
+.main-container .main-section .settings-contents .cards .site-control .site-state p {
+    font-size: 15px;
+    color: #888;
+    text-transform: lowercase;
+}
+
+.main-container .main-section .settings-contents .cards .site-control form textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    min-width: 40%;
+    max-height: 100px;
+    min-height: 30px;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+
 .main-container .main-section .settings-contents .cards .integrations ul {
     margin: 0;
     padding: 0;
@@ -361,4 +362,120 @@
     font-size: 13px;
     margin: 0;
     margin-top: 5px;
+}
+
+.main-container .main-section .settings-contents .cards .site-control form textarea::placeholder {
+    font-size: 12px;
+}
+
+.main-container .main-section .settings-contents .cards .delete-account form {
+    display: block;
+    margin-top: 20px;
+}
+
+.main-container .main-section .settings-contents .cards .delete-account form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-container .main-section .settings-contents .cards .delete-account form input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+.main-container .main-section .settings-contents .cards .delete-account form button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.6);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .delete-account form input::placeholder {
+    font-size: 14px;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color {
+    flex: 1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors input {
+    display: none;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div {
+    width: calc((100% - 20px) / 3);
+    height: 100px;
+    padding: 2px;
+    border: 1px solid #e3effa;
+    border-radius: 10px;
+}
+
+@media(max-width: 991px) {
+    .main-container .main-section .settings-contents .cards .brand-color .colors div {
+        width: calc((100% - 10px) / 2);
+        height: 60px;
+    }
+}
+
+@media(max-width: 400px) {
+    .main-container .main-section .settings-contents .cards .brand-color .colors div {
+        width: 100%;
+    }
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:has(input:checked) {
+    border-color: #0075ff;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(1) label {
+    background-color: #A9D6E5;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(2) label {
+    background-color: #A3D9B1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(3) label {
+    background-color: #FFF4B1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(4) label {
+    background-color: #FFD8B1;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(5) label {
+    background-color: #FFC1CC;
+}
+
+.main-container .main-section .settings-contents .cards .brand-color .colors div:nth-child(6) label {
+    background-color: #D3D3D3;
 }

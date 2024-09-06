@@ -8,7 +8,7 @@
     <meta name="keywords" content="Html, Css, web, web application, css expemple, programming, dashboard" />
     <meta name="author" content="Mohammed EL-MEHDI" />
     <base target="_self" />
-    <title>EL-MEHDI | Dashboard</title>
+    <title>EL-MEHDI | Settings</title>
     <link rel="shortcut icon" href="./images/fav-icon.webp" />
     <!-- Insert the normailze css file -->
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
@@ -105,7 +105,7 @@
                     Settings
                 </h2>
                 <div class="cards first-party">
-                    <div class="card update-interfaces-themes update-theme">
+                    <div class="card update-theme">
                         <div class="card-title">
                             <h3>Interface theme</h3>
                             <p>Select or customize you UI theme</p>
@@ -223,42 +223,6 @@
                             <button class="main-link">cancel</button>
                         </div>
                     </div>
-                    <div class="card brand-color">
-                        <div class="card-title">
-                            <h3>Brand color</h3>
-                            <p>Select or customize your brand color</p>
-                        </div>
-                        <div class="colors">
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor1" />
-                                <label for="brandColor1"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor2" />
-                                <label for="brandColor2"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor3" />
-                                <label for="brandColor3"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor4" />
-                                <label for="brandColor4"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor5" checked />
-                                <label for="brandColor5"></label>
-                            </div>
-                            <div>
-                                <input type="radio" name="brandColor" id="brandColor6" />
-                                <label for="brandColor6"></label>
-                            </div>
-                        </div>
-                        <div class="manage-buttons">
-                            <button class="main-link">save</button>
-                            <button class="main-link">cancel</button>
-                        </div>
-                    </div>
                     <div class="card third-party-acoounts">
                         <div class="card-title">
                             <h3>third party accounts</h3>
@@ -307,6 +271,29 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="card site-control">
+                        <div class="card-title">
+                            <h3>Site Control</h3>
+                            <p>Control The Website If There Is Mantenence</p>
+                        </div>
+                        <div class="site-state">
+                            <div class="text">
+                                <h4>Website Control</h4>
+                                <p>openClass Website And Type The Relation</p>
+                            </div>
+                            <div class="checkbox-input">
+                                <label for="mainCheckboxInput1"></label>
+                                <input type="checkbox" id="mainCheckboxInput1" />
+                            </div>
+                        </div>
+                        <form class="message-content">
+                            <textarea name="messageContent" placeholder="Class Message content"></textarea>
+                        </form>
+                        <div class="manage-buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
+                    </div>
                     <div class="card integrations">
                         <div class="card-title">
                             <h3>Integrations</h3>
@@ -346,6 +333,53 @@
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                    <div class="card delete-account">
+                        <div class="card-title">
+                            <h3>Delete Account</h3>
+                            <p>Once you delete your account and account data. tehre is no going back.</p>
+                        </div>
+                        <form>
+                            <label>DELETE YOUR ACCOUNT AND ACCOUNT DATA: </label>
+                            <input type="email" name="confirmedEmail" placeholder="confirm email" />
+                            <button type="submit">DELETE ACCOUNT</button>
+                        </form>
+                    </div>
+                    <div class="card brand-color">
+                        <div class="card-title">
+                            <h3>Brand color</h3>
+                            <p>Select or customize your brand color</p>
+                        </div>
+                        <div class="colors">
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor1" />
+                                <label for="brandColor1"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor2" />
+                                <label for="brandColor2"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor3" />
+                                <label for="brandColor3"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor4" />
+                                <label for="brandColor4"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor5" checked />
+                                <label for="brandColor5"></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="brandColor" id="brandColor6" />
+                                <label for="brandColor6"></label>
+                            </div>
+                        </div>
+                        <div class="manage-buttons">
+                            <button class="main-link">save</button>
+                            <button class="main-link">cancel</button>
+                        </div>
                     </div>
                 </div>
             </div>
