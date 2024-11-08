@@ -1,0 +1,582 @@
+.main-container .profile-content .welcome-part {
+    margin-bottom: 10px;
+}
+
+.main-container .profile-content .welcome-part .top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin-bottom: 10px
+}
+
+.main-container .profile-content .welcome-part .top .left {
+    width: 40%;
+}
+
+@media (max-width: 991px) {
+    .main-container .profile-content .welcome-part .top .left {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-container .profile-content .welcome-part .top .left {
+        width: 100%;
+    }
+}
+
+.main-container .profile-content .welcome-part .top .left .welcome {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.main-container .profile-content .welcome-part .top .left .welcome img {
+    max-width: 130px;
+    border-radius: 50%;
+}
+
+@media (max-width: 550px) {
+    .main-container .profile-content .welcome-part .top .left .welcome img {
+        max-width: 60px;
+    }
+}
+
+.main-container .profile-content .welcome-part .top .left .welcome h2 {
+    margin: 0;
+}
+
+.main-container .profile-content .welcome-part .top .left .welcome h2 span {
+    background-color: rgb(29 161 242 / 20%);
+}
+
+.main-container .profile-content .welcome-part .top .left>p {
+    font-size: 17px;
+    line-height: 1.2;
+    color: rgb(63, 63, 63);
+    margin: 0;
+    margin-top: 10px;
+}
+
+@media(max-width: 991px) {
+    .main-container .profile-content .welcome-part .top .left>p {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 550px) {
+    .main-container .profile-content .welcome-part .top .left>p {
+        font-size: 15px;
+    }
+}
+
+.main-container .profile-content .welcome-part .top .right {
+    width: calc(60% - 10px);
+    min-height: 150px;
+    border-radius: 15px;
+    position: relative;
+    background-image: url("../images/profile/main-background.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+    .main-container .profile-content .welcome-part .top .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-container .profile-content .welcome-part .top .right {
+        min-height: 100px;
+    }
+}
+
+.main-container .profile-content .welcome-part .top .right a {
+    display: block;
+    width: fit-content;
+    font-size: 15px;
+    padding: 3px 7px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+.main-container .profile-content .welcome-part .top .right a i {
+    margin-left: 20px;
+}
+
+.main-container .profile-content .welcome-part .buttom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media(max-width: 991px) {
+    .main-container .profile-content .welcome-part .buttom {
+        justify-content: center;
+    }
+}
+
+.main-container .profile-content .welcome-part .buttom .box {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics {
+    width: calc(40% - 20px);
+    background-color: rgb(229, 241, 237);
+}
+
+@media(max-width: 991px) {
+    .main-container .profile-content .welcome-part .buttom .analytics {
+        width: 80%;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-container .profile-content .welcome-part .buttom .analytics {
+        width: 100%;
+    }
+}
+
+.main-container .profile-content .welcome-part .buttom .number {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/profile/background-2.jpeg");
+    background-size: cover;
+}
+
+@media(max-width: 991px) {
+    .main-container .profile-content .welcome-part .buttom .number {
+        width: calc((80% - 10px) / 2)
+    }
+}
+
+@media(max-width: 767px) {
+    .main-container .profile-content .welcome-part .buttom .number {
+        width: 100%
+    }
+}
+
+.main-container .profile-content .welcome-part .buttom .box .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-container .profile-content .welcome-part .buttom .box .header h3 {
+    margin: 0;
+}
+
+.main-container .profile-content .welcome-part .buttom .box .header span {
+    font-size: 14px;
+    padding: 2px 6px;
+    text-transform: lowercase;
+    color: white;
+    background-color: rgba(154, 151, 228, 0.7);
+    border-radius: 5px;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .header span {
+    background-color: rgb(151, 189, 174);
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .columns {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .columns .container {
+    min-width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .columns .container .column {
+    width: calc((100% - 110px) / 12);
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .columns .container .column span {
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(104 191 197);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .footer p {
+    font-size: 14px;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .footer p span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: rgb(104 191 197);
+}
+
+.main-container .profile-content .welcome-part .buttom .analytics .footer p:first-child span {
+    background-color: white;
+}
+
+.main-container .profile-content .welcome-part .buttom .number .head h1 {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.main-container .profile-content .welcome-part .buttom .number .footer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 8px 14px;
+    color: black;
+    background-color: rgb(232, 245, 241);
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+
+.main-container .profile-content .welcome-part .buttom .number .footer a:last-child {
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+}
+
+.main-container .profile-content .parameters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.main-container .profile-content .parameters .left {
+    width: calc(67% - 10px);
+}
+
+@media(max-width: 991px) {
+    .main-container .profile-content .parameters .left {
+        width: 100%;
+    }
+}
+
+.main-container .profile-content .parameters .left .top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-container .profile-content .parameters .left .top .columns {
+    width: calc(60% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media(max-width: 550px) {
+    .main-container .profile-content .parameters .left .top .columns {
+        width: 100%;
+    }
+}
+
+.main-container .profile-content .parameters .left .top .columns .column {
+    display: flex;
+    align-items: center;
+    gap: 5px 10px;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-container .profile-content .parameters .left .top .columns .column .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 241, 237);
+    border-radius: 7px;
+}
+
+.main-container .profile-content .parameters .left .top .columns .column:last-child .icon {
+    background-color: rgb(226, 226, 253);
+}
+
+.main-container .profile-content .parameters .left .top .columns .column .icon i {
+    color: rgb(151, 189, 174);
+    font-size: 20px;
+}
+
+.main-container .profile-content .parameters .left .top .columns .column:last-child .icon i {
+    color: rgba(154, 151, 228, 0.7);
+}
+
+.main-container .profile-content .parameters .left .top .columns .column .text h3 {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+@media(max-width: 550px) {
+    .main-container .profile-content .parameters .left .top .columns .column .text h3 {
+        margin-bottom: 5px;
+    }
+}
+
+.main-container .profile-content .parameters .left .top .columns .column .text p {
+    font-size: 17px;
+    margin: 0;
+    color: rgb(92, 92, 92);
+}
+
+.main-container .profile-content .parameters .left .top .task {
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media(max-width: 550px) {
+    .main-container .profile-content .parameters .left .top .task {
+        width: 100%;
+    }
+}
+
+.main-container .profile-content .parameters .left .top .task>h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.main-container .profile-content .parameters .left .top .task .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.main-container .profile-content .parameters .left .top .task .items .item {
+    height: 100px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.main-container .profile-content .parameters .left .top .task .items .item:first-child {
+    width: calc(60% - 10px);
+    background-color: rgb(229, 241, 237)
+}
+
+.main-container .profile-content .parameters .left .top .task .items .item:nth-child(2) {
+    width: 30%;
+    background-color: rgb(226, 226, 253);
+}
+
+.main-container .profile-content .parameters .left .top .task .items .item:last-child {
+    width: 10%;
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.main-container .profile-content .parameters .left .top .task .explain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+}
+
+.main-container .profile-content .parameters .left .top .task .explain p {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    margin-top: 4px;
+}
+
+.main-container .profile-content .parameters .left .top .task .explain p span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(229, 241, 237);
+    border-radius: 50%;
+}
+
+.main-container .profile-content .parameters .left .top .task .explain p:nth-child(2) span {
+    background-color: rgb(226, 226, 253);
+}
+
+.main-container .profile-content .parameters .left .top .task .explain p:last-child span {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.main-container .profile-content .parameters .left .bottom {
+    background-color: rgb(219, 241, 234);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.main-container .profile-content .parameters .left .bottom .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.main-container .profile-content .parameters .left .bottom .title h3 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.main-container .profile-content .parameters .left .bottom .title p {
+    margin: 0;
+}
+
+.main-container .profile-content .parameters .left .bottom .title p span {
+    color: rgb(126, 126, 126);
+}
+
+.main-container .profile-content .parameters .left .bottom .progress {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 4px;
+}
+
+.main-container .profile-content .parameters .left .bottom .progress span {
+    display: block;
+    width: 70%;
+    height: 6px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer,
+.main-container .profile-content .parameters .left .bottom .footer .date,
+.main-container .profile-content .parameters .left .bottom .footer .date .start,
+.main-container .profile-content .parameters .left .bottom .footer .date .end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer {
+    gap: 5px 20px;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer .date {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px 20px;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer .date p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer .date i {
+    color: rgb(151, 189, 174);
+}
+
+.main-container .profile-content .parameters .left .bottom .footer .mumbers {
+    display: flex;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer .mumbers img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.main-container .profile-content .parameters .left .bottom .footer .mumbers img:not(:first-child) {
+    margin-left: -8px;
+}
+
+.main-container .profile-content .parameters .right {
+    width: 33%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media(max-width: 991px) {
+    .main-container .profile-content .parameters .right {
+        width: 100%
+    }
+}
+
+.main-container .profile-content .parameters .right>h3 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.main-container .profile-content .parameters .right .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container .profile-content .parameters .right .plan:not(:last-child) {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.main-container .profile-content .parameters .right .plan .images {
+    display: flex;
+    align-items: center;
+}
+
+.main-container .profile-content .parameters .right .plan .images img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.main-container .profile-content .parameters .right .plan .images img:not(:first-child) {
+    margin-left: -9px;
+}
+
+.main-container .profile-content .parameters .right .plan span {
+    font-size: 15px;
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(229, 241, 237);
+    border-radius: 4px;
+}
+
+.main-container .profile-content .parameters .right .plan span.stuck {
+    background-color: rgba(255, 165, 0, 0.5);
+}
