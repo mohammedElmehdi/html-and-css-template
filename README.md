@@ -5,5 +5,6 @@ A basic HTML and CSS starter template for web projects. Provides a clean HTML st
 ## Pages included in this template
 - dashboard [live preview](https://mohammedelmehdi.github.io/html-and-css-template)
 - settings [live preview](https://mohammedelmehdi.github.io/html-and-css-template/settings.html)
+- profile [live preview](https://mohammedelmehdi.github.io/html-and-css-template/profile.html)
 
 *Free for personal and commercial use*
